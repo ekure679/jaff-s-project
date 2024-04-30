@@ -1,0 +1,268 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+   font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+header,footer{
+    background-color: green;
+    text-align: center;
+
+}
+.main-container{
+    display: flex;
+    top: 10%;
+}
+.logo{
+    display: flex;
+}
+.logo img{
+    width: 100px;
+    height: 100px;
+    margin: 40px 20px;
+    border-radius: 50%;
+}
+.header-content{
+   
+    padding: 20px;
+ position: relative;
+ align-items: center;
+ justify-content: center;
+ margin-top: 50px;
+}
+.header-content h1{
+    font-size: 40px;
+    font-weight: 700;
+    color: white;
+}
+.header-content p{
+    font-size: 20px;
+    font-weight: 400;
+    color: white;
+}
+section{
+    padding: 20px;
+    margin-top: 80px; /* Adjust top margin to not overlap with nav */
+    text-align: center;
+}
+/* navigation bar */
+nav{
+  position: relative;
+  z-index: 1;
+}
+nav ul{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    display: flex;
+    background-color: black;
+    gap: 40px;
+    text-align: center;
+    justify-content: center;
+}
+nav ul li{
+    padding: 20px;
+    font-size: 20px;
+}
+nav ul li a{
+    text-decoration: none;
+    color: white;
+    
+}
+
+nav::before .active-element{
+    transform: rotateY(180deg);
+    transition: 0.5s;
+
+}
+/* ====================home================================== */
+#home{
+    background-image: linear-gradient(45deg,rgba(50, 53, 50, 0.486),rgba(63, 66, 64, 0.404)),url(side-view-hands-holding-plant.jpg);
+    background-size: cover;
+    background-attachment: fixed; 
+    width: 100%;
+    height: 70vh;
+    margin-top: 0px;
+  
+}
+.home h2{
+    font-size: 50px;
+    font-weight: 700;
+    color: #fff;
+    margin-bottom: 30px;
+}
+.home p{
+    font-size: 20px;
+    font-weight: 400;
+    color: #fff;
+    margin-bottom: 5px;
+}
+/* ==========================ABOUT======================= */
+h2{
+    font-size: 50px;
+    font-weight: 700;
+    margin-bottom: 30px;
+}
+h3{
+    font-size: 20px;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+.about{
+   width: 100%;
+}
+.about img{
+    float: left;
+    height: 70vh;
+    width: 50%;
+}
+.text-1{
+    width: 100%;
+    height: 60vh;
+}
+ ul {
+    list-style:none;
+    padding: 0;
+    margin: 0;
+    margin-bottom: 7px;
+    padding-left: 80px;
+    padding-left: 5px;
+}
+ul li{
+   
+ margin-left: 120px;
+ 
+}
+/* services */
+conten-img{
+    display: flex;
+    gap:40px;;
+    width:90%;
+    border-radius: 10px;
+  }
+  .column{
+    display:flex;
+    flex-direction:row;
+    gap:40px;
+    justify-content: space-between;
+    cursor: pointer;
+    box-shadow: rgb(16, 17, 17);
+    transition: all 1.1ms;
+  }
+  .con-img{
+    border-radius: 10px;
+  
+    width:40%;
+    height: 40%;
+    gap:40px ;
+    border-radius:20px;
+    object-fit: cover;
+  }
+  /* .con-img img{
+    border-radius:10px;
+    object-fit: cover;
+   
+  }
+  .column:hover .con-img img{
+    transform: scale(1.2);
+  } */
+  .md{
+    color: black;
+    text-align: justify;
+    font-size: 15px;
+  }
+  /* get intouch */
+#contact-1{
+    background-image: linear-gradient(45deg,rgba(224, 231, 223, 0.486),rgba(161, 172, 164, 0.404)),url(side-view-woman-taking-care-plants.jpg);
+    background-size: cover;
+    
+}
+#contact-1 h3{
+ font-size: 40px;
+}
+.contact-info{
+    width:100%;
+}
+.contact-info h3{
+    font-size: 30px;
+    font-weight: 400px;
+    
+}
+.contact-info p{
+    font-size: 20px;
+    font-weight: 200px;
+}
+.form-group{
+    width: 100%;
+    gap: 20;
+}
+.form-group label{
+    font-size: 25px;
+    display: block;
+}
+.form-group input{
+    border: none;
+    width: 30%;
+    height: 8vh;
+    background-color: transparent;
+    border: solid green;
+    border-radius: 10px;
+}
+.form-group textarea {
+    border: none;
+    width: 50%;
+    height: 30vh;
+    background-color: transparent;
+    border: solid green;
+}
+.form-group #subject{
+    width: 20%;
+    height: 5vh;
+}
+ button{
+    width:15%;
+    height: 7vh;
+    border: none;
+    cursor: pointer;
+}
+button:hover{
+    color: azure;
+    background-color: blueviolet;
+    transition: 1.1ms;
+}
+#contact{
+    background-color: rgba(0, 0, 0, 0.568);
+    margin-top: 0px;
+    color: #fff;
+}
+.lag{
+    display: flex;
+    gap: 40;
+    align-items: center;
+    justify-content: space-around;
+}
+.footer-column h3{
+    text-align: center;
+    color: #fff;
+    margin-bottom: 30px;
+    margin-top: 10px;
+    font-size: 40px;
+}
+.footer-column ul{
+    margin-bottom:50px ;
+    
+    
+}
+.footer-column ul li{
+    text-align: justify;
+    color: #fff;
+}
+.footer-column ul li a{
+    text-decoration: none;
+    color: #fff;
+}
+footer p{
+    color: #fff;
+}
